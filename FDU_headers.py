@@ -8,6 +8,12 @@
 # Last Modified: Wednesday, 13th November 2019 11:34:43 am
 # Copyright  © Rockface 2019 - 2020
 # --------------------------------------------------------------
+# Project:      FDU_Timetable_New
+# Created:      Thursday, 11th March 2021 16:25:10 pm
+# Author:       Xingjian Zhao & Dong Xu, Undergraduates
+# Contact:      zhaoxingjian@gmail.com
+# Using the same license as the original project
+# --------------------------------------------------------------
 
 HEADER_CAPTCHA = {
     "Host": "uis.fudan.edu.cn",

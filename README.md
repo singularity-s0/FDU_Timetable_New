@@ -4,13 +4,16 @@
 
 Timetable exporter for FDU. Automatically login to jwfw.fdu.edu.cn, export as `.ics` file. Hope you enjoy this.
 
-自动登录FDU教务系统读取课表，导出为`.ics`文件
+自动登录复旦教务系统读取课表，导出为`.ics`文件
 
+## FDU_Timetable-New Changelog
+### Bugfixes to make the awesome project usable again!
+- Upgraded protocol to HTTPS to avoid error caused by HTTP 302 redirects
+- Fixed Regex Expression to prevent courses from being incorrectly positioned in the timetable
+- Now asks user to input semester start date (instead of hardcoding it)
+- Added lxml to requirements.txt and removed unused imports
 
-<center>
-<div style="float:right;border:solid 1px 000;margin:10px;"><img src="./img/IMG_0636.PNG" width="300"/></div>
-</center>
-
+Bugfix made together with @w568w
 
 ## Setup
 - Download this repo, 

@@ -8,6 +8,12 @@
 # Last Modified: Tuesday, 12th November 2019 9:32:51 pm
 # Copyright  © Rockface 2019 - 2020     © Recallu 2019 - 2020
 # --------------------------------------------------------------
+# Project:      FDU_Timetable_New
+# Created:      Thursday, 11th March 2021 16:25:10 pm
+# Author:       Xingjian Zhao & Dong Xu, Undergraduates
+# Contact:      zhaoxingjian@gmail.com
+# Using the same license as the original project
+# --------------------------------------------------------------
 
 '''
 复旦大学统一身份认证登录
