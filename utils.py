@@ -39,6 +39,9 @@ def parseCookie(value):
 
 
 def saveHtml(title, text, code):
+# Does not need debug info in production environment
+# Uncomment to output debug info
+    '''
     i = 0
     filename = 'Test_%s_0_%d.html' % (title, code)
     while(os.path.exists(filename)):
@@ -48,3 +51,4 @@ def saveHtml(title, text, code):
         file.write(text)
         file.close()
     logger.info("SUCCESS: Save to %s." % filename)
+    '''

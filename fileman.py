@@ -79,7 +79,7 @@ def convertDate(week, day, slot):
     '''
     global s_year, s_month, s_day
     if s_year==0:
-        s_year, s_month, s_day = map(int, input('\nEnter the date of the first day of class in YYYY-MM-DD format\n').split('-'))
+        s_year, s_month, s_day = map(int, input('\nWhen does the semester start? Answer in YYYY-MM-DD format (e.g. 2021-03-01)\n').split('-'))
 
     tz = pytz.timezone('Asia/Shanghai')
     corrected_time = datetime.datetime(s_year, s_month, s_day) - datetime.timedelta(days = 7)

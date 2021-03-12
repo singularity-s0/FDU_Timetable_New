@@ -12,14 +12,17 @@ Timetable exporter for FDU. Automatically login to jwfw.fdu.edu.cn, export as `.
 - Fixed Regex Expression to prevent courses from being incorrectly positioned in the timetable
 - Now asks user to input semester start date (instead of hardcoding it)
 - Added lxml to requirements.txt and removed unused imports
+- Various optimizations for production environment
 
+Tested 2021-03-12
 Bugfix made together with @w568w
 
-## Setup
-- Download this repo, 
-- install requirements: `pip install -r requirements.txt`
-- add your username and password to the buttom of `fetchdata.py`, 
+## Usage
+- download this
+- install requirements: `pip install -r requirements.txt` (you may have to use `pip3` depending on your system)
 - then run`python3 fetchdata.py`
+- Enter your UIS ID, Password, and semester start date when prompted
+- The calander is saved as `fdu_timetable.ics`
 
 **Note:** 
 
@@ -30,23 +33,8 @@ Bugfix made together with @w568w
 
 - 尽量以邮件的方式发送生成的`fdu_timetable.ics`至你的邮箱，iOS使用系统默认邮箱打开
 
-## Overview
-### Login
-教务系统登录：`fdulogin.py`
-
-### Table Retrieve
-Implemented in: `fetchdata.py`
-
-### Convert to .ics file
-Implemented in: `fileman.py`
-
-## Todo
-- 添加自动获取校历，确定教学周开始日期
-
 ## License
 This project is distributed under the `Apache 2.0` License, see [LICENSE](https://github.com/Liu-Molin/FDU_Timetable/blob/master/LICENCE) for more information.
 
 ## Acknowledgments
-[FDU_COURSETABLE](https://github.com/syz913/FDU_COURSETABLE)
-
-Miss. Florence
+[FDU_Timetable](https://github.com/Molin-L/FDU_Timetable)

@@ -136,7 +136,7 @@ class TableManager():
         Note: ids is for the following steps post.
         '''
         header = HEADER_LOGIN
-        get_url = "http://jwfw.fudan.edu.cn/eams/courseTableForStd.action"
+        get_url = "https://jwfw.fudan.edu.cn/eams/courseTableForStd.action"
 
         resp = self.__session.get(
             get_url, headers=header, cookies=self.__cookies)
@@ -202,9 +202,6 @@ def processing(session, cookies):
 
 
 if __name__ == "__main__":
-    '''
-    Change with your username and password:
-    '''
 
     username = input("Your FDU id:\n").strip()
     password = input("Password:\n").strip()
