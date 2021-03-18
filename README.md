@@ -18,6 +18,9 @@ Tested 2021-03-12
 Bugfix made together with @w568w
 
 ## Usage
+
+### For those who doesn't want to (or doesn't know how to) configure Python, there is a (pseudo-)compiled `.exe` executable [here](https://github.com/kavinzhao/FDU_Timetable_New/releases).
+
 - download this
 - install requirements: `pip install -r requirements.txt` (you may have to use `pip3` depending on your system)
 - then run`python3 fetchdata.py`

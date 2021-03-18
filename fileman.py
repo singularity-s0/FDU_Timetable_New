@@ -148,4 +148,5 @@ def createCalendar(course_list):
     f = open('fdu_timetable.ics', 'wb')
     f.write(cal.to_ical())
     f.close()
-    logger.info("SUCCESS: All success, enjoy.")
+    logger.info("SUCCESS: The file is saved to fdu_timetable.ics")
+    input('Press ENTER to exit.')

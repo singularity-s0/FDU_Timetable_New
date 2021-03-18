@@ -93,7 +93,7 @@ class FDU_User():
         Login to jwfw.fdu
         '''
         waiting_time = 3
-        logger.info("Wait for %ds." % waiting_time)
+        logger.info("Please wait...")
         time.sleep(waiting_time)
         url = "http://uis.fudan.edu.cn/authserver/login?service=http%3A%2F%2Fjwfw.fudan.edu.cn%2Feams%2Flogin.action"
         form_data = {
@@ -128,7 +128,7 @@ class FDU_User():
         header = HEADER_LOGIN
         self.__gen_header = header
         pst_now_0 = datetime.datetime.now(pytz.timezone("Etc/GMT+0"))
-        time_stamp = int(float(pst_now_0.strftime("%s.%f"))*1000)
+        time_stamp = int(float(pst_now_0.strftime("%S.%f"))*1000)
         url = "http://uis.fudan.edu.cn/authserver/needCaptcha.html?username=%s&_=%s" % (
             self.__fdu_id, time_stamp)
         response = self.__session.get(url, headers=header)

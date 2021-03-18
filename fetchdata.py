@@ -203,8 +203,8 @@ def processing(session, cookies):
 
 if __name__ == "__main__":
 
-    username = input("Your FDU id:\n").strip()
-    password = input("Password:\n").strip()
+    username = input("Enter your UIS ID:\n").strip()
+    password = input("Enter your UIS Password:\nYour password will be sent only to FDU Servers via secure connection.\n").strip()
 
     user = FDU_User(fdu_id=username, fdu_pw=password)
     session, cookies = user.finish_login()
