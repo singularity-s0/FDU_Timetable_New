@@ -10,6 +10,7 @@ Timetable exporter for FDU. Automatically login to jwfw.fdu.edu.cn, export as `.
 ### Bugfixes to make the awesome project usable again!
 - Upgraded protocol to HTTPS to avoid error caused by HTTP 302 redirects
 - Fixed Regex Expression to prevent courses from being incorrectly positioned in the timetable
+- Fixed "%s" date&time format string not available on Windows
 - Now asks user to input semester start date (instead of hardcoding it)
 - Added lxml to requirements.txt and removed unused imports
 - Various optimizations for production environment
