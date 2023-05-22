@@ -1,6 +1,6 @@
 pytz==2018.9
 icalendar==4.0.3
-requests==2.21.0
+requests==2.31.0
 beautifulsoup4==4.8.1
 PyPDF2==1.26.0
 lxml
